@@ -3,312 +3,450 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mahdi's Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Ahmad Umar Mahdi — Full Stack Kotlin Developer</title>
+  <meta name="description" content="Portfolio of Ahmad Umar Mahdi — Full Stack Kotlin Developer (Mobile & Backend). Android, Kotlin Multiplatform, Jetpack Compose & Spring Boot.">
+  <meta name="keywords" content="Kotlin, Android Developer, Jetpack Compose, Spring Boot, KMP, Bangladesh">
+  <meta name="author" content="Ahmad Umar Mahdi">
 
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta property="og:title" content="Ahmad Umar Mahdi — Full Stack Kotlin Developer">
+  <meta property="og:description" content="Android, Kotlin Multiplatform, Jetpack Compose & Spring Boot developer based in Dhaka, Bangladesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/profile-img.jpg">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="icon" href="img/favicon.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
   <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Navbar ======= -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand scrollto"><span class="brand-mark">&lt;/&gt;</span> Mahdi</a>
 
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Mahdi</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://play.google.com/store/apps/developer?id=Mahdi%27s+LAB" target="_blank" class="play"><i class='bx bxl-play-store'></i></a>
-          <a href="https://twitter.com/yk_mahdi" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/yamin.mahdiii" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/yk_mahdi" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/yaminmahdi/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
+      <nav id="nav-menu">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#about" class="nav-link scrollto">About</a></li>
+          <li><a href="#experience" class="nav-link scrollto">Experience</a></li>
+          <li><a href="#skills" class="nav-link scrollto">Skills</a></li>
+          <li><a href="#projects" class="nav-link scrollto">Projects</a></li>
+          <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
+          <li><a href="res/Ahmad%20Umar%20Mahdi-RESUME.pdf" download="Ahmad Umar Mahdi - Resume.pdf" class="btn btn-sm btn-primary nav-cv"><i class="bx bxs-download"></i> CV</a></li>
         </ul>
       </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation"><i class="bx bx-menu"></i></button>
     </div>
   </header>
 
-  <section id="hero" class="d-flex flex-column justify-content-lg-end align-items-start">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Ahmad Umar Mahdi</h1>
-      <p>I'm <span class="typed" data-typed-items="Problem Solver, Android Developer, Student, Photographer"></span></p>
-      <p>Hi <span class="type" data-typed-items="1:1:1:1,</br>Are you from "></span></p>
-
+  <!-- ======= Hero ======= -->
+  <section id="hero">
+    <div class="container hero-inner">
+      <div class="hero-text" data-aos="fade-up">
+        <p class="hero-hello"><span class="mono">Hi, my name is</span></p>
+        <h1>Ahmad Umar Mahdi</h1>
+        <h2>I'm a <span class="typed" data-typed-items="Full Stack Kotlin Developer, Android Developer, KMP / CMP Developer, Spring Boot Developer, Problem Solver"></span></h2>
+        <p class="hero-sub">
+          I build mobile apps and backend systems with Kotlin — from Jetpack Compose &amp; Kotlin
+          Multiplatform on the front, to Spring Boot &amp; Ktor on the back. Based in Dhaka, Bangladesh.
+        </p>
+        <div class="hero-actions">
+          <a href="res/Ahmad%20Umar%20Mahdi-RESUME.pdf" download="Ahmad Umar Mahdi - Resume.pdf" class="btn btn-primary"><i class="bx bxs-download"></i> Download CV</a>
+          <a href="#projects" class="btn btn-outline scrollto"><i class="bx bx-code-alt"></i> View Projects</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/YaminMahdi" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/yaminmahdi/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://play.google.com/store/apps/developer?id=Mahdi%27s+LAB" target="_blank" rel="noopener" aria-label="Play Store"><i class="bx bxl-play-store"></i></a>
+          <a href="https://twitter.com/yk_mahdi" target="_blank" rel="noopener" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/yamin.mahdiii" target="_blank" rel="noopener" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/yk_mahdi" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero-photo" data-aos="zoom-in" data-aos-delay="150">
+        <div class="photo-ring">
+          <img src="img/profile-img.jpg" alt="Ahmad Umar Mahdi">
+        </div>
+      </div>
     </div>
+    <a href="#about" class="hero-scroll scrollto" aria-label="Scroll down"><i class="bx bx-chevron-down"></i></a>
   </section>
 
-  <main id="main">
+  <main>
 
-    <section id="about" class="about">
+    <!-- ======= About ======= -->
+    <section id="about" class="section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I am a programmer. I love coding. I am also passionate about writing, which is why I am currently studying for a BSc degree in CSE. In my spare time, I enjoy reading, spending time with my family, and playing video games.</p>
+        <div class="section-title" data-aos="fade-up">
+          <span class="section-kicker mono">01.</span>
+          <h2>About Me</h2>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Android Developer.</h3>
-            <p class="fst-italic">
-              I mostly develop apps and games for Android Devices.
+        <div class="about-grid">
+          <div class="about-text" data-aos="fade-up">
+            <p>
+              I'm a <strong>Full Stack Kotlin Developer</strong> specializing in mobile application
+              development and backend systems. I work with modern Android technologies — Jetpack Compose,
+              Kotlin Multiplatform, Clean Architecture — and build backend services with Spring Boot and Ktor.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>December 1998</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+880 1989 601230</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Uttara, Dhaka, Bangladesh</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Sc. in CSE</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>yamin_khan@asia.com</span></li>
-                </ul>
-              </div>
-            </div>
+            <p>
+              I have a strong track record of delivering high-quality software products, from a
+              <strong>World Bank–funded social protection platform</strong> in South Sudan to IoT smart-kitchen
+              apps for a US client and a dot-and-boxes game with <strong>50k+ downloads</strong>.
+            </p>
+            <ul class="about-facts">
+              <li><i class="bx bx-map"></i> Dhaka, Bangladesh</li>
+              <li><i class="bx bx-briefcase"></i> Junior Mobile App Developer @ Karooth IT</li>
+              <li><i class="bx bxs-graduation"></i> B.Sc. in CSE, Daffodil International University</li>
+              <li><i class="bx bx-envelope"></i> <a href="mailto:yamin_khan@asia.com">yamin_khan@asia.com</a></li>
+            </ul>
+          </div>
+          <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years of Experience</span></div>
+            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Production Apps</span></div>
+            <div class="stat"><span class="stat-num">50k+</span><span class="stat-label">Game Downloads</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Countries' Clients</span></div>
           </div>
         </div>
-
       </div>
     </section>
 
-    
-    <section id="skills" class="skills section-bg">
+    <!-- ======= Experience ======= -->
+    <section id="experience" class="section section-alt">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I am currently focusing on becoming an Android developer. If I divide my skill into 100 percent, I would estimate that my current focus is around 25 percent in Problem solving, 35 percent in Android development and 40 percent other things. </p>
+        <div class="section-title" data-aos="fade-up">
+          <span class="section-kicker mono">02.</span>
+          <h2>Work Experience</h2>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Problem Solving<i class="val">25%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Android Devlopment<i class="val">35%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">HTML, CSS, JavaScript & bootstrap <i class="val">15%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date mono">Summer '25 — Present</span>
+            <h3>Junior Mobile Application Developer</h3>
+            <h4>Karooth IT (BD) Ltd. · Mirpur DOHS, Dhaka</h4>
+            <ul>
+              <li>Maintaining the mobile apps and backend of <strong>SNSOP</strong> (South Sudan, World Bank funded) using Kotlin and Spring Boot.</li>
+              <li>Worked across modules including Biometric Verified Payment, Attendance and GRM.</li>
+              <li>Shipped two production Compose Multiplatform applications with Kotlin Multiplatform.</li>
+            </ul>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Arch Linux <i class="val">15%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop<i class="val">10%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date mono">Fall '24 — Summer '25</span>
+            <h3>Junior Software Engineer</h3>
+            <h4>6sense Technologies · Banasree, Dhaka</h4>
+            <ul>
+              <li>Worked with USA and India clients.</li>
+              <li>Developed an IoT-enabled Android app for <strong>Ome Inc.</strong> with seamless real-time control of smart kitchen appliances.</li>
+            </ul>
           </div>
 
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date mono">Fall '23 — Fall '24</span>
+            <h3>Android Developer (Intern)</h3>
+            <h4>PRAN-RFL Group · Middle Badda, Dhaka</h4>
+            <ul>
+              <li>Worked as a full-time developer on an extended contract.</li>
+              <li>Contributed to <strong>SPRO</strong>, PRAN's biggest project, migrating it to the latest technology stack.</li>
+              <li>Independently developed the <strong>RFL Care (Mistri Project)</strong> Android application.</li>
+            </ul>
+          </div>
         </div>
-
       </div>
     </section>
 
-
-    <section id="resume" class="resume">
+    <!-- ======= Skills ======= -->
+    <section id="skills" class="section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Talented Android Developer with over 3 years of software and web development experience in this field. Solid understanding of full mobile and software development life cycles, UI, web analytics and changing web standards. </p>
+        <div class="section-title" data-aos="fade-up">
+          <span class="section-kicker mono">03.</span>
+          <h2>Skills &amp; Technologies</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Ahmad Umar Mahdi</h4>
-              <p><em>Dedicated to continuously developing, implementing, and adopting new technologies to maximize development efficiency and produce innovative applications.</em></p>
-              
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Gender:</strong> <span>Male</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Religion:</strong> <span>Islam</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>Bangladeshi</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Marital Status:</strong> <span>Unmarrid</span></li>
-
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 December 1998</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Hobbies:</strong> <span>Cycling, Swimming nad Cooking</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Home Town:</strong> <span>Jashore, Bangladesh</span></li>
-
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-
-            <div class="resume-item">
-              <h4>Bachelor of Science in Computer Science and Engineering</h4>
-              <h5>2019 - 2023</h5>
-              <p><em>Daffodil International University, Daffodil Smart City, Ashulia, Dhaka, Bangladesh.</em></p>
-              <p>Daffodil International University (DIU) is recognized in independent government assessments as one of top graded universities in Bangladesh.</p>
+        <div class="skills-grid">
+          <div class="skill-group" data-aos="fade-up">
+            <h3><i class="bx bx-code-curly"></i> Languages</h3>
+            <div class="chips">
+              <span class="chip chip-hl">Kotlin</span><span class="chip">Java</span><span class="chip">Dart</span>
+              <span class="chip">C / C++</span><span class="chip">Python</span><span class="chip">SQL / NoSQL</span>
             </div>
           </div>
 
-        </div>
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="50">
+            <h3><i class="bx bxl-android"></i> Android &amp; Multiplatform</h3>
+            <div class="chips">
+              <span class="chip chip-hl">Jetpack Compose</span><span class="chip chip-hl">KMP / CMP</span>
+              <span class="chip">View (XML)</span><span class="chip">Kotlin Coroutines</span><span class="chip">ROOM</span>
+              <span class="chip">Data Store</span><span class="chip">Realm</span><span class="chip">Work Manager</span>
+              <span class="chip">Paging 3</span><span class="chip">Navigation 3</span><span class="chip">COIL</span>
+              <span class="chip">Dagger Hilt</span><span class="chip">KOIN</span><span class="chip">KSP</span>
+              <span class="chip">ProGuard / R8</span><span class="chip">ML Kit</span><span class="chip">TfLite</span>
+              <span class="chip">Map SDK</span><span class="chip">Fingerprint SDK</span><span class="chip">Riverpod</span>
+            </div>
+          </div>
 
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="bx bx-server"></i> Backend &amp; Infrastructure</h3>
+            <div class="chips">
+              <span class="chip chip-hl">Spring Boot</span><span class="chip chip-hl">Ktor</span>
+              <span class="chip">REST API</span><span class="chip">Retrofit</span><span class="chip">RabbitMQ</span>
+              <span class="chip">Redis</span><span class="chip">Elastic Search</span><span class="chip">MS SQL</span>
+              <span class="chip">Firebase</span><span class="chip">Minio</span><span class="chip">Flyway</span>
+              <span class="chip">JDBI</span><span class="chip">WebSocket</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-aos="fade-up" data-aos-delay="150">
+            <h3><i class="bx bx-layer"></i> Architecture &amp; Tools</h3>
+            <div class="chips">
+              <span class="chip chip-hl">Clean Architecture</span><span class="chip">MVVM</span>
+              <span class="chip">Multi-module</span><span class="chip">Single-Activity</span>
+              <span class="chip">Git / Git Flow</span><span class="chip">Arch Linux</span><span class="chip">OOP</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- ======= Projects ======= -->
+    <section id="projects" class="section section-alt">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>Here is the list of my projects:</p>
+        <div class="section-title" data-aos="fade-up">
+          <span class="section-kicker mono">04.</span>
+          <h2>Featured Projects</h2>
+          <p>Scan a QR code with your phone to open the project directly.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-controller"></i></div>
-            <h4 class="title"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.diu.yk_games.line2box" >Line2Box</a></h4>
-            <p class="description">This is my second Android Application or you can also call it a game. (made with Android Studio)</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-controller"></i></div>
-            <h4 class="title"><a target="_blank" href="https://github.com/YaminMahdi/YKQuizGameAndroid/releases">YK Quiz Game</a></h4>
-            <p class="description">This is my first Android Application or you can also call it a game. (made with Unity)</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class='bx bx-library'></i></div>
-            <h4 class="title"><a target="_blank" href="https://github.com/YaminMahdi/library_management_system/releases">Library Management System</a></h4>
-            <p class="description">This is my first JAVA Project with SQLite. It is all about a Library Management System.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class='bx bxl-java' ></i></div>
-            <h4 class="title"><a target="_blank" href="https://github.com/YaminMahdi/Cafeteria_controlling_system">Cafeteria Controlling System</a></h4>
-            <p class="description">MySql Database Project With JAVA in CLI</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bx bxl-python"></i></div>
-            <h4 class="title"><a target="_blank" href="https://github.com/YaminMahdi/Project_BHDR">Bangla Handwritten Digit Recognition</a></h4>
-            <p class="description">Handwritten digit recognition is a technique for automatically recognizing and detecting handwritten digital data via Machine Learning models</p>
-          </div>
+        <div class="projects-grid">
+
+          <article class="project-card" data-aos="fade-up">
+            <div class="project-head">
+              <a href="https://newmis.southsudansafetynet.info/trial/master" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p1.jpg" alt="SNSOP QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">World Bank Funded</span>
+                <h3><a href="https://newmis.southsudansafetynet.info/trial/master" target="_blank" rel="noopener">SNSOP</a></h3>
+              </div>
+            </div>
+            <p>Three mobile applications — Registration &amp; Payment (with Morpho and Dermalog fingerprint devices for secure biometric authentication), Attendance, and GRM — with a backend built on Spring Boot.</p>
+            <div class="chips">
+              <span class="chip">Kotlin</span><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Biometrics</span>
+            </div>
+            <a class="project-link" href="https://newmis.southsudansafetynet.info/trial/master" target="_blank" rel="noopener"><i class="bx bx-globe"></i> Visit Website</a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-head">
+              <a href="https://play.google.com/store/apps/details?id=com.ome.app" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p2.jpg" alt="Ome QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">Ome, Inc (USA)</span>
+                <h3><a href="https://play.google.com/store/apps/details?id=com.ome.app" target="_blank" rel="noopener">Ome — Smart Kitchen</a></h3>
+              </div>
+            </div>
+            <p>Control and monitor gas and electric stoves remotely with Cooking Timers, Remote Monitoring and Burner Control. Built with Clean Architecture, Ktor, WebSocket and more.</p>
+            <div class="chips">
+              <span class="chip">IoT</span><span class="chip">Ktor</span><span class="chip">WebSocket</span><span class="chip">Clean Architecture</span>
+            </div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.ome.app" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> Play Store</a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-head">
+              <a href="https://play.google.com/store/apps/details?id=com.pranrflgroup.spro" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p3.jpg" alt="SPRO QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">PRAN-RFL Group</span>
+                <h3><a href="https://play.google.com/store/apps/details?id=com.pranrflgroup.spro" target="_blank" rel="noopener">SPRO</a></h3>
+              </div>
+            </div>
+            <p>Software of PRAN RFL Operation. Converted the whole application from a single module to multi-module using Single-Activity &amp; Clean Architecture, Ktor and Dagger Hilt.</p>
+            <div class="chips">
+              <span class="chip">Multi-module</span><span class="chip">Ktor</span><span class="chip">Dagger Hilt</span>
+            </div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.pranrflgroup.spro" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> Play Store</a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-head">
+              <a href="https://play.google.com/store/apps/details?id=com.rfl.rpl" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p4.jpg" alt="RFL Care QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">PRAN-RFL Group</span>
+                <h3><a href="https://play.google.com/store/apps/details?id=com.rfl.rpl" target="_blank" rel="noopener">RFL Care</a></h3>
+              </div>
+            </div>
+            <p>Designed to empower plumbers, technicians and mistris across Bangladesh. Built with Kotlin, Clean Architecture, Retrofit, ROOM, Dagger Hilt and FCM.</p>
+            <div class="chips">
+              <span class="chip">Kotlin</span><span class="chip">ROOM</span><span class="chip">Retrofit</span><span class="chip">FCM</span>
+            </div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.rfl.rpl" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> Play Store</a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-head">
+              <a href="https://play.google.com/store/apps/details?id=com.mlab.knockme" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p5.jpg" alt="KnockME QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">Personal</span>
+                <h3><a href="https://play.google.com/store/apps/details?id=com.mlab.knockme" target="_blank" rel="noopener">KnockME — DIU Student Portal++</a></h3>
+              </div>
+            </div>
+            <p>An unofficial backup server for the DIU Student Portal where students can also chat with each other. Built with Kotlin, Jetpack Compose, Clean Architecture, Retrofit and Dagger Hilt.</p>
+            <div class="chips">
+              <span class="chip">Jetpack Compose</span><span class="chip">Retrofit</span><span class="chip">Dagger Hilt</span>
+            </div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.mlab.knockme" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> Play Store</a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-head">
+              <a href="https://play.google.com/store/apps/details?id=com.diu.yk_games.line2box" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p6.jpg" alt="Line2Box QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">Personal · 50k+ Downloads</span>
+                <h3><a href="https://play.google.com/store/apps/details?id=com.diu.yk_games.line2box" target="_blank" rel="noopener">Line2Box — Dots &amp; Boxes Game</a></h3>
+              </div>
+            </div>
+            <p>A fun classic pen-and-paper game for two players with Multiplayer, Real-time Chat and an AI Bot. Created with Java, Kotlin, Firebase &amp; Google Play Games.</p>
+            <div class="chips">
+              <span class="chip">Java</span><span class="chip">Kotlin</span><span class="chip">Firebase</span><span class="chip">Play Games</span>
+            </div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.diu.yk_games.line2box" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> Play Store</a>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-head">
+              <a href="https://play.google.com/store/apps/details?id=com.diu.mlab.foodie.zone" target="_blank" rel="noopener" class="project-qr" title="Scan or click to open">
+                <img src="img/p7.jpg" alt="DIU Foodie Zone QR code" loading="lazy">
+              </a>
+              <div>
+                <span class="project-tag">Final Year Project</span>
+                <h3><a href="https://play.google.com/store/apps/details?id=com.diu.mlab.foodie.zone" target="_blank" rel="noopener">DIU Foodie Zone</a></h3>
+              </div>
+            </div>
+            <p>A food-delivery ecosystem for DIU Campus — three applications (User, Admin, Runner) built with Kotlin, Clean Architecture, Firebase, Retrofit, Dagger Hilt and FCM.</p>
+            <div class="chips">
+              <span class="chip">Kotlin</span><span class="chip">Firebase</span><span class="chip">Dagger Hilt</span><span class="chip">FCM</span>
+            </div>
+            <a class="project-link" href="https://play.google.com/store/apps/details?id=com.diu.mlab.foodie.zone" target="_blank" rel="noopener"><i class="bx bxl-play-store"></i> Play Store</a>
+          </article>
 
         </div>
 
+        <div class="more-projects" data-aos="fade-up">
+          <h3>Other Projects</h3>
+          <ul>
+            <li><a href="https://github.com/YaminMahdi/YKQuizGameAndroid/releases" target="_blank" rel="noopener"><i class="bx bxl-github"></i> YK Quiz Game</a> — my first Android game, made with Unity.</li>
+            <li><a href="https://github.com/YaminMahdi/library_management_system/releases" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Library Management System</a> — Java + SQLite desktop project.</li>
+            <li><a href="https://github.com/YaminMahdi/Cafeteria_controlling_system" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Cafeteria Controlling System</a> — MySQL database project with Java CLI.</li>
+            <li><a href="https://github.com/YaminMahdi/Project_BHDR" target="_blank" rel="noopener"><i class="bx bxl-github"></i> Bangla Handwritten Digit Recognition</a> — machine learning with Python.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-
-    <section id="contact" class="contact">
+    <!-- ======= Education ======= -->
+    <section id="education" class="section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>If you want to send some gifts to me, here take my location.</p>
+        <div class="section-title" data-aos="fade-up">
+          <span class="section-kicker mono">05.</span>
+          <h2>Education &amp; Certifications</h2>
         </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p><a target="_blank" href="https://goo.gl/maps/685U8ehrbL5s3ja9A">House 35, Road 10, Sector 12, Uttara, Dhaka</a></p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="mailto:yamin_khan@asia.com">yamin_khan@asia.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>WhatsApp:</h4>
-                <p><a target="_blank" href="https://api.whatsapp.com/send?phone=+8801989601230">+880 1989 601230</a></p>
-              </div>
-
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.5021650740655!2d90.38083329999999!3d23.8718056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c40fb857cb01%3A0xb6ca60a98b4c89e2!2sUttara%2012%20No.%20Sector%20park!5e0!3m2!1sen!2sbd!4v1668088504351!5m2!1sen!2sbd" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
+        <div class="edu-grid">
+          <div class="edu-card" data-aos="fade-up">
+            <i class="bx bxs-graduation edu-icon"></i>
+            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+            <h4>Daffodil International University · 2019 – 2023</h4>
+            <p>CGPA 3.45 / 4.00 — Participated in ICPC Dhaka Regional Preliminary Contest 2020 and Take Off Programming Contests.</p>
           </div>
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="50">
+            <i class="bx bx-certification edu-icon"></i>
+            <h3>Android Development Using Kotlin</h3>
+            <h4>HRDI · May 2023</h4>
+            <p><a href="https://drive.google.com/file/d/1-T0GrexY28LzJlknwdJExNQxR5dEiuo8" target="_blank" rel="noopener">View certificate <i class="bx bx-link-external"></i></a></p>
+          </div>
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-certification edu-icon"></i>
+            <h3>OOP Concepts with Java</h3>
+            <h4>DIU CPC · Oct 2020</h4>
+            <p><a href="https://drive.google.com/file/d/1kWYzgiuxoMTfbYaKgOGPor_MlfScms2l" target="_blank" rel="noopener">View certificate <i class="bx bx-link-external"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span class="section-kicker mono">06.</span>
+          <h2>Get In Touch</h2>
+          <p>I'm open to new opportunities and collaborations — my inbox is always open.</p>
         </div>
 
+        <div class="contact-grid" data-aos="fade-up">
+          <a class="contact-card" href="mailto:yamin_khan@asia.com">
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p>yamin_khan@asia.com</p>
+          </a>
+          <a class="contact-card" href="https://api.whatsapp.com/send?phone=+8801989601230" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <p>+880 1989 601230</p>
+          </a>
+          <a class="contact-card" href="https://goo.gl/maps/685U8ehrbL5s3ja9A" target="_blank" rel="noopener">
+            <i class="bx bx-map"></i>
+            <h3>Location</h3>
+            <p>Diabari, Uttara, Dhaka, Bangladesh</p>
+          </a>
+          <a class="contact-card" href="res/Ahmad%20Umar%20Mahdi-RESUME.pdf" download="Ahmad Umar Mahdi - Resume.pdf">
+            <i class="bx bxs-file-pdf"></i>
+            <h3>Resume</h3>
+            <p>Download my CV (PDF)</p>
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="hero-social">
+        <a href="https://github.com/YaminMahdi" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/yaminmahdi/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://play.google.com/store/apps/developer?id=Mahdi%27s+LAB" target="_blank" rel="noopener" aria-label="Play Store"><i class="bx bxl-play-store"></i></a>
+        <a href="https://twitter.com/yk_mahdi" target="_blank" rel="noopener" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p class="mono">© <span id="year"></span> Ahmad Umar Mahdi · Built with <i class="bx bx-heart"></i> for the web</p>
+    </div>
+  </footer>
 
+  <a href="#hero" class="back-to-top scrollto" aria-label="Back to top"><i class="bx bx-chevron-up"></i></a>
 
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-
-
   <script src="js/main.js"></script>
 
 </body>
